@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            header{
+                text-align: center;
+                font-size: 25px;
+                background-color: brown;
+                color: white;
+                padding:5px;
+            }
+            h2{
+                background-color: lightgreen;
+                color: black;
+                padding: 20px;
+                margin: 0px;
+            }
+            table ,tr,th,td{
+                border: 2px solid black;
+                padding:20px;
+                text-align: center;
+                border-collapse: collapse;
+                font-size: 30px;
+                font-family: comic sans-serif;
+            }
+            #Table1{
+                background-color: orangered;
+            }
+            #Table2{
+                background-color:gray;
+            }
+            #Table3{
+                background-color: brown;
+            }
+
+            td{
+                color: white;
+                font-size: 20px;
+            }
+            th:hover{
+                background-color: green;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Table</h1>
+        </header>
+        <section>
+            <h2>Normal Table</h2>
+            <table id="Table1" width=100%>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Qualification</th>
+                    <th>Marks/%</th>
+                    <th>University</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Student 1</td>
+                    <td>B-tech</td>
+                    <td>85</td>
+                    <td>JNTU-K</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Student 2</td>
+                    <td>M-tech</td>
+                    <td>75</td>
+                    <td>JNTU-H</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Student 3</td>
+                    <td>MCA</td>
+                    <td>78</td>
+                    <td>Andhra University</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Student 4</td>
+                    <td>B-Pharmacy</td>
+                    <td>65</td>
+                    <td>K L U</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Colspan</h2>
+            <table id="Table2" width=100%>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Profession</th>
+                    <th colspan="2">Company & Adress</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rajesh</td>
+                    <td>Web Developer</td>
+                    <td>HCL</td>
+                    <td>Bangalore</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Suresh</td>
+                    <td>Sub Inspector</td>
+                    <td>Police</td>
+                    <td>Andhra Pradesh</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mahesh</td>
+                    <td>Tseter</td>
+                    <td>TCS</td>
+                    <td>Hyderbad</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Rowspan</h2>
+            <table id="Table3" width=100%>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Type of Batsman</th>
+                    <th>Country</th>
+                    <th>Board</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sachin Tendulkar</td>
+                    <td rowspan="2">RIght Handed Batsman</td>
+                    <td>India </td>
+                    <td>BCCI</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ricky Ponting</td>
+                    <td>Australia </td>
+                    <td>ASS</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sangakara</td>
+                    <td>Left Handed Batsman</td>
+                    <td>Srilanka </td>
+                    <td>SCB</td>
+                </tr>
+            </table>
+        </section>
+    </body>
+</html>
